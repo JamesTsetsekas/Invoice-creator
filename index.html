@@ -1,0 +1,51 @@
+<html>
+	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/b6575aac5b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="blue">
+				<h1 class="title">Invoice creator</h1>
+				<p class="tagline">Thanks for choosing GoodCorp, LLC!</p>
+			</header>
+			<div class="dark">
+				<div class="invoice-btns">
+					<button id="wash-car" class="invoice-btn btn">Wash Car: $10</button>
+					<button id="mow-lawn" class="invoice-btn btn">Mow Lawn: $20</button>
+					<button id="pull-weeds" class="invoice-btn btn">Pull Weeds: $30</button>
+				</div>
+				<div class="summary flex space-between">
+					<div class="task">
+						<span>TASK</span>
+					</div>
+					<div class="subtotal">
+						<span>TOTAL</span>
+					</div>
+				</div>
+				<div class="services-container" id="ordered-services"></div>
+				<hr class="divider">
+				<div class="lower-summary flex space-between">
+					<div class="notes">
+						<span>NOTES</span>
+						<div>
+							<span class="we-accept">We accept Bitcoin, cash, credit card, or PayPal</span>
+						</div>
+					</div>
+					<div id="total-amount">
+						<span id="total">TOTAL AMOUNT</span>
+					</div>
+				</div>
+				<span id="price"></span>
+				<button id="send-invoice-btn" class="blue send-invoice-btn btn"> 
+				<i class="fa fa-envelope"></i>
+				Send invoice
+				</button>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
